@@ -5,25 +5,14 @@
   "scripts": {
     "dev": "PORT=3060 next dev",
     "build": "next build",
-    "build:localhost": "next build",
-    "build:develop": "next build",
-    "build:prod": "next build",
-    "start": "next start",
-    "start:develop": "next start",
-    "start:prod": "next start",
-    "lint": "next lint",
-    "coverage": "vitest run --coverage",
-    "test": "vitest run",
-    "prepare-husky": "husky install",
-    "prepare": "husky",
-    "yalc-link": "yalc add @purplelab/healthnexus-library-ui",
-    "yalc-unlink": "yalc remove @purplelab/healthnexus-library-ui && npm install @purplelab/healthnexus-library-ui"
+    "test": "vitest run"
   },
   "dependencies": {
     "ag-grid-community": "32.3.1",
     "ag-grid-enterprise": "32.3.1",
     "ag-grid-react": "32.3.1",
     "axios": "^1.3.4",
+    "library-playground-aggrid": "^1.0.0",
     "next": "^14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -31,6 +20,9 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react-window": "^1.8.5",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
@@ -41,9 +33,6 @@
     "jsdom": "^22.0.0",
     "vite-tsconfig-paths": "^5.0.1",
     "vitest": "^1.6.0",
-    "vitest-sonar-reporter": "^2.0.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.3.1",
-    "@testing-library/user-event": "^14.4.3"
+    "vitest-sonar-reporter": "^2.0.0"
   }
 }
