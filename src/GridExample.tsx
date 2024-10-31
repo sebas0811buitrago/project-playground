@@ -1,6 +1,7 @@
 import { AgGridWrapper } from "library-playground-aggrid";
 import { useCallback, useMemo, useState } from "react";
 import { ColDef, GridReadyEvent } from "ag-grid-community";
+import { AgGridReact } from "ag-grid-react";
 
 export interface IOlympicData {
   athlete: string;
@@ -59,6 +60,13 @@ const Home = () => {
         autoGroupColumnDef={autoGroupColumnDef}
         onGridReady={onGridReady}
       />
+      {/* <AgGridReact<IOlympicData>
+        rowData={rowData}
+        columnDefs={columnDefs}
+        defaultColDef={defaultColDef}
+        autoGroupColumnDef={autoGroupColumnDef}
+        onGridReady={onGridReady}
+      /> */}
     </div>
   );
 };
